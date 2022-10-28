@@ -28,7 +28,7 @@ def get_fruityvice_data(fruit_choice):
   
   
   
-streamlit.header('Fruitvice Adice')
+streamlit.header('Fruitvice Advice')
 try:
   fruit_choice = streamlit.text_input('What fruit would you like information about?')
   if not fruit_choice:
