@@ -56,7 +56,7 @@ if streamlit.button("The fruit load list contains:"):
 # Allow end user to add fruit to the list     
 
 def insert_row_snowflake(fruit_toadd):
-  with my_cnx as my_cur:
+  with my_cnx.cursor() as my_cur:
     my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values (fruit_toadd)")
     return ('Thanks for adding ', fruit_toadd)
     
